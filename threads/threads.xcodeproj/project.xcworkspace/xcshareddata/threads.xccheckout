@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F9F33AF5-18EE-4E4E-BC2A-41A7C89A0290</string>
+	<key>IDESourceControlProjectName</key>
+	<string>threads</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B663F9D1CC54D656D57DBB76929A811A78CA6FA</key>
+		<string>https://github.com/joemin/threads.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>threads/threads.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B663F9D1CC54D656D57DBB76929A811A78CA6FA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joemin/threads.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B663F9D1CC54D656D57DBB76929A811A78CA6FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B663F9D1CC54D656D57DBB76929A811A78CA6FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>threads</string>
+		</dict>
+	</array>
+</dict>
+</plist>
