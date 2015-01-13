@@ -17,21 +17,16 @@
     _shoes = [[NSMutableArray alloc] init];
     _topIndex = 0;
     _bottomIndex = 0;
-//    self.topsRight = [[UIButton alloc] init];
+    [self.topImage setImage:[UIImage imageNamed:@"shirt.png"]];
+    
+    [self loadTops];
+    [self loadBottoms];
+}
+
+- (void)loadTops {
     
     PFQuery *listingQuery = [PFQuery queryWithClassName:@"listing"];
     PFQuery *imageQuery = [PFQuery queryWithClassName:@"listing_image"];
-    
-    [self.topImage setImage:[UIImage imageNamed:@"shirt.png"]];
-    [self loadTops:listingQuery withImageQuery:imageQuery];
-//    [self loadBottoms:listingQuery withImageQuery:imageQuery];
-//    [self.topsRight addTarget:self
-//                       action: @selector(topsShiftRight:)
-//             forControlEvents: UIControlEventTouchUpInside];
-
-}
-
-- (void)loadTops:(PFQuery *)listingQuery withImageQuery:(PFQuery *)imageQuery {
     
     [listingQuery whereKey:@"category_path" equalTo:@"Tshirt"];
     [imageQuery whereKey:@"listing_id" matchesKey:@"listing_id" inQuery:listingQuery];
@@ -52,7 +47,10 @@
     }];
 }
 
-- (void)loadBottoms:(PFQuery *)listingQuery withImageQuery:(PFQuery *)imageQuery {
+- (void)loadBottoms {
+    
+    PFQuery *listingQuery = [PFQuery queryWithClassName:@"listing"];
+    PFQuery *imageQuery = [PFQuery queryWithClassName:@"listing_image"];
     
     [listingQuery whereKey:@"category_path" equalTo:@"Pants"];
     [imageQuery whereKey:@"listing_id" matchesKey:@"listing_id" inQuery:listingQuery];
@@ -74,7 +72,7 @@
 }
 
 - (IBAction)topsRight:(id)sender {
-    if (self.topIndex < [self.tops count]) {
+    if (self.topIndex < [self.tops count] - 1) {
         self.topIndex = self.topIndex + 1;
     }
     self.currentTop = [self.tops objectAtIndex:self.topIndex];
@@ -88,4 +86,21 @@
     self.currentTop = [self.tops objectAtIndex:self.topIndex];
     [self.topImage setImage:[self.currentTop getTopImage]];
 }
+
+- (IBAction)bottomsRight:(id)sender {
+    if (self.bottomIndex < [self.bottoms count] - 1) {
+        self.bottomIndex = self.bottomIndex + 1;
+    }
+    self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
+    [self.bottomImage setImage:[self.currentBottom getBottomImage]];
+}
+
+- (IBAction)bottomsLeft:(id)sender {
+    if (self.bottomIndex > 0) {
+        self.bottomIndex = self.bottomIndex - 1;
+    }
+    self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
+    [self.bottomImage setImage:[self.currentBottom getBottomImage]];
+}
+
 @end

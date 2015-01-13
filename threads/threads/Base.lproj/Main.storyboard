@@ -69,6 +69,9 @@
                                 <state key="normal" title="&gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bottomsRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UKB-MD-Ir4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssl-Kr-8CC">
                                 <rect key="frame" x="428" y="486" width="30" height="30"/>
@@ -81,6 +84,9 @@
                                 <state key="normal" title="&lt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bottomsLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Oo-Sj-H0k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKC-X9-o5m">
                                 <rect key="frame" x="126" y="486" width="30" height="30"/>

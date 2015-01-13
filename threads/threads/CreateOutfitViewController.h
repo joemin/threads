@@ -19,6 +19,8 @@
 
 - (IBAction)topsRight:(id)sender;
 - (IBAction)topsLeft:(id)sender;
+- (IBAction)bottomsRight:(id)sender;
+- (IBAction)bottomsLeft:(id)sender;
 
 @property (nonatomic) NSMutableArray *tops;
 @property (nonatomic) NSMutableArray *bottoms;
@@ -32,8 +34,8 @@
 @property NSUInteger bottomIndex;
 @property NSUInteger shoeIndex;
 
-- loadTops:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
-- loadBottoms:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
+- (void)loadTops:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
+- (void)loadBottoms:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
 //- (void)topsShiftRight;
 
 @end
