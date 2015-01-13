@@ -9,17 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateOutfitViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *topImage;
-@property (weak, nonatomic) IBOutlet UIImageView *bottomImage;
-@property (weak, nonatomic) IBOutlet UIImageView *shoesImage;
+
+@property (strong, nonatomic) IBOutlet UIImageView *topImage;
+@property (strong, nonatomic) IBOutlet UIImageView *bottomImage;
+@property (strong, nonatomic) IBOutlet UIImageView *shoesImage;
 @property (weak, nonatomic) IBOutlet UIButton *topsLeft;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topsRight;
+@property (weak, nonatomic) IBOutlet UIButton *topsRight;
 @property (weak, nonatomic) IBOutlet UIButton *bottomsLeft;
 @property (weak, nonatomic) IBOutlet UIButton *bottomsRight;
 @property (weak, nonatomic) IBOutlet UIButton *shoesLeft;
 @property (weak, nonatomic) IBOutlet UIButton *shoesRight;
-@property (weak, nonatomic) NSMutableArray *tops;
-@property (weak, nonatomic) NSMutableArray *bottoms;
-@property (weak, nonatomic) NSMutableArray *shoes;
+@property (nonatomic) NSMutableArray *tops;
+@property (nonatomic) NSMutableArray *bottoms;
+@property (nonatomic) NSMutableArray *shoes;
 
 @end

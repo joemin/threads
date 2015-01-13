@@ -21,6 +21,9 @@
 		323B81341A6488AA009358E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B81291A6488AA009358E8 /* StoreKit.framework */; };
 		323B81351A6488AA009358E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B812A1A6488AA009358E8 /* SystemConfiguration.framework */; };
 		323B81381A648AF4009358E8 /* CreateOutfitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B81371A648AF4009358E8 /* CreateOutfitViewController.m */; };
+		323B81441A6493F7009358E8 /* Garment.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B81431A6493F7009358E8 /* Garment.m */; };
+		323B81471A649418009358E8 /* Top.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B81461A649418009358E8 /* Top.m */; };
+		323B814A1A64A05D009358E8 /* shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 323B81491A64A05D009358E8 /* shirt.png */; };
 		327366901A64865F001311A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3273668F1A64865F001311A7 /* main.m */; };
 		327366931A64865F001311A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327366921A64865F001311A7 /* AppDelegate.m */; };
 		327366961A64865F001311A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327366951A64865F001311A7 /* ViewController.m */; };
@@ -56,6 +59,11 @@
 		323B812A1A6488AA009358E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		323B81361A648AF4009358E8 /* CreateOutfitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateOutfitViewController.h; sourceTree = "<group>"; };
 		323B81371A648AF4009358E8 /* CreateOutfitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateOutfitViewController.m; sourceTree = "<group>"; };
+		323B81421A6493F7009358E8 /* Garment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Garment.h; sourceTree = "<group>"; };
+		323B81431A6493F7009358E8 /* Garment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Garment.m; sourceTree = "<group>"; };
+		323B81451A649418009358E8 /* Top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Top.h; sourceTree = "<group>"; };
+		323B81461A649418009358E8 /* Top.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top.m; sourceTree = "<group>"; };
+		323B81491A64A05D009358E8 /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
 		3273668A1A64865F001311A7 /* threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3273668E1A64865F001311A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3273668F1A64865F001311A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +130,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		323B81481A64959F009358E8 /* Item Classes */ = {
+			isa = PBXGroup;
+			children = (
+				323B81421A6493F7009358E8 /* Garment.h */,
+				323B81431A6493F7009358E8 /* Garment.m */,
+				323B81451A649418009358E8 /* Top.h */,
+				323B81461A649418009358E8 /* Top.m */,
+			);
+			name = "Item Classes";
+			sourceTree = "<group>";
+		};
 		327366811A64865F001311A7 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +163,7 @@
 		3273668C1A64865F001311A7 /* threads */ = {
 			isa = PBXGroup;
 			children = (
+				323B81491A64A05D009358E8 /* shirt.png */,
 				327366911A64865F001311A7 /* AppDelegate.h */,
 				327366921A64865F001311A7 /* AppDelegate.m */,
 				327366941A64865F001311A7 /* ViewController.h */,
@@ -154,6 +174,7 @@
 				3273668D1A64865F001311A7 /* Supporting Files */,
 				323B81361A648AF4009358E8 /* CreateOutfitViewController.h */,
 				323B81371A648AF4009358E8 /* CreateOutfitViewController.m */,
+				323B81481A64959F009358E8 /* Item Classes */,
 			);
 			path = threads;
 			sourceTree = "<group>";
@@ -266,6 +287,7 @@
 				327366991A64865F001311A7 /* Main.storyboard in Resources */,
 				3273669E1A64865F001311A7 /* LaunchScreen.xib in Resources */,
 				3273669B1A64865F001311A7 /* Images.xcassets in Resources */,
+				323B814A1A64A05D009358E8 /* shirt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +307,8 @@
 			files = (
 				327366961A64865F001311A7 /* ViewController.m in Sources */,
 				323B81381A648AF4009358E8 /* CreateOutfitViewController.m in Sources */,
+				323B81441A6493F7009358E8 /* Garment.m in Sources */,
+				323B81471A649418009358E8 /* Top.m in Sources */,
 				327366931A64865F001311A7 /* AppDelegate.m in Sources */,
 				327366901A64865F001311A7 /* main.m in Sources */,
 			);
