@@ -24,6 +24,7 @@
 		323B81441A6493F7009358E8 /* Garment.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B81431A6493F7009358E8 /* Garment.m */; };
 		323B81471A649418009358E8 /* Top.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B81461A649418009358E8 /* Top.m */; };
 		323B814A1A64A05D009358E8 /* shirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 323B81491A64A05D009358E8 /* shirt.png */; };
+		323B814D1A64F75A009358E8 /* Bottom.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B814C1A64F75A009358E8 /* Bottom.m */; };
 		327366901A64865F001311A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3273668F1A64865F001311A7 /* main.m */; };
 		327366931A64865F001311A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327366921A64865F001311A7 /* AppDelegate.m */; };
 		327366961A64865F001311A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327366951A64865F001311A7 /* ViewController.m */; };
@@ -64,6 +65,8 @@
 		323B81451A649418009358E8 /* Top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Top.h; sourceTree = "<group>"; };
 		323B81461A649418009358E8 /* Top.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top.m; sourceTree = "<group>"; };
 		323B81491A64A05D009358E8 /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
+		323B814B1A64F75A009358E8 /* Bottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bottom.h; sourceTree = "<group>"; };
+		323B814C1A64F75A009358E8 /* Bottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bottom.m; sourceTree = "<group>"; };
 		3273668A1A64865F001311A7 /* threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3273668E1A64865F001311A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3273668F1A64865F001311A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				323B81431A6493F7009358E8 /* Garment.m */,
 				323B81451A649418009358E8 /* Top.h */,
 				323B81461A649418009358E8 /* Top.m */,
+				323B814B1A64F75A009358E8 /* Bottom.h */,
+				323B814C1A64F75A009358E8 /* Bottom.m */,
 			);
 			name = "Item Classes";
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				323B81381A648AF4009358E8 /* CreateOutfitViewController.m in Sources */,
 				323B81441A6493F7009358E8 /* Garment.m in Sources */,
 				323B81471A649418009358E8 /* Top.m in Sources */,
+				323B814D1A64F75A009358E8 /* Bottom.m in Sources */,
 				327366931A64865F001311A7 /* AppDelegate.m in Sources */,
 				327366901A64865F001311A7 /* main.m in Sources */,
 			);

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Garment : NSObject
 
-@property NSString *imageURL;
+@property (strong) UIImage *image;
 @property NSString *description;
 
 @end

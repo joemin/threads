@@ -21,7 +21,6 @@
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
     
-    // Initialize Parse.
     [Parse setApplicationId:@"3NoBSZClJrI8pML3QuOBD3QUKYiZaFonXRJJszO1"
                   clientKey:@"q6KjEmWmTFwzmzxhPWmX1pTt9nrzsNqYwO4zZqiK"];
     

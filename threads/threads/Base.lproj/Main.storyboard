@@ -61,7 +61,7 @@
                                     <rect key="frame" x="293" y="133" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="topsRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WoC-HH-7C6"/>
+                                    <action selector="topsRight:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TzR-OT-lQ6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-iG-LCc">
@@ -97,7 +97,7 @@
                                     <rect key="frame" x="77" y="133" width="30" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="topsLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tXR-FI-Czd"/>
+                                    <action selector="topsLeft:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eOm-mz-nA8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,34 +151,38 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="8Vy-Tg-AGr"/>
+                                <exclude reference="Rtl-Ul-yaD"/>
                                 <exclude reference="33p-Uj-wyk"/>
                                 <exclude reference="Gkh-yw-1uE"/>
                                 <exclude reference="M6s-iI-Riv"/>
                                 <exclude reference="Wfb-ex-b2z"/>
                                 <exclude reference="Ycw-GN-8hr"/>
-                                <exclude reference="8Vy-Tg-AGr"/>
-                                <exclude reference="Rtl-Ul-yaD"/>
                                 <exclude reference="Acy-VX-mlb"/>
                                 <exclude reference="k6h-5H-K1y"/>
-                                <exclude reference="aSW-wV-o0I"/>
-                                <exclude reference="yMA-Xr-EJQ"/>
                                 <exclude reference="Fwx-im-YZ4"/>
                                 <exclude reference="Ps6-yB-X6y"/>
                                 <exclude reference="UfM-bo-QfA"/>
-                                <exclude reference="RAF-qn-Shb"/>
+                                <exclude reference="aSW-wV-o0I"/>
+                                <exclude reference="yMA-Xr-EJQ"/>
                                 <exclude reference="IVz-C3-pu0"/>
                                 <exclude reference="MlR-rF-9NS"/>
                                 <exclude reference="XoN-EZ-HqT"/>
+                                <exclude reference="RAF-qn-Shb"/>
                                 <exclude reference="LUt-Hu-9TO"/>
                                 <exclude reference="fQG-je-1EB"/>
                                 <exclude reference="pbO-MS-kAg"/>
-                                <exclude reference="Aa1-hu-aYI"/>
                                 <exclude reference="5qf-rP-po9"/>
                                 <exclude reference="MeD-PY-v9c"/>
+                                <exclude reference="Aa1-hu-aYI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="8Vy-Tg-AGr"/>
+                                <exclude reference="Bf1-K8-N0r"/>
+                                <exclude reference="Cdz-He-lw2"/>
+                                <include reference="Rtl-Ul-yaD"/>
                                 <include reference="33p-Uj-wyk"/>
                                 <include reference="Gkh-yw-1uE"/>
                                 <include reference="M6s-iI-Riv"/>
@@ -187,10 +191,6 @@
                                 <include reference="Wfb-ex-b2z"/>
                                 <exclude reference="YLX-hE-hDc"/>
                                 <include reference="Ycw-GN-8hr"/>
-                                <include reference="8Vy-Tg-AGr"/>
-                                <exclude reference="Bf1-K8-N0r"/>
-                                <exclude reference="Cdz-He-lw2"/>
-                                <include reference="Rtl-Ul-yaD"/>
                                 <exclude reference="27V-sf-SAE"/>
                                 <exclude reference="8Db-Cj-HVk"/>
                                 <include reference="Acy-VX-mlb"/>
@@ -198,45 +198,39 @@
                                 <exclude reference="VTI-bf-Q1R"/>
                                 <exclude reference="WA5-bk-vzU"/>
                                 <include reference="k6h-5H-K1y"/>
-                                <exclude reference="Bwf-k7-CgW"/>
-                                <include reference="aSW-wV-o0I"/>
-                                <exclude reference="emt-cs-l5I"/>
-                                <include reference="yMA-Xr-EJQ"/>
                                 <include reference="Fwx-im-YZ4"/>
                                 <include reference="Ps6-yB-X6y"/>
                                 <include reference="UfM-bo-QfA"/>
                                 <exclude reference="dqd-ZC-TrX"/>
-                                <exclude reference="3Xq-h6-Bk4"/>
-                                <include reference="RAF-qn-Shb"/>
+                                <exclude reference="Bwf-k7-CgW"/>
+                                <include reference="aSW-wV-o0I"/>
+                                <exclude reference="emt-cs-l5I"/>
+                                <include reference="yMA-Xr-EJQ"/>
                                 <exclude reference="CZK-Oj-7s6"/>
                                 <exclude reference="Hrh-95-fak"/>
                                 <include reference="IVz-C3-pu0"/>
                                 <include reference="MlR-rF-9NS"/>
                                 <exclude reference="Oms-Oc-k1V"/>
                                 <include reference="XoN-EZ-HqT"/>
+                                <exclude reference="3Xq-h6-Bk4"/>
+                                <include reference="RAF-qn-Shb"/>
                                 <include reference="LUt-Hu-9TO"/>
                                 <include reference="fQG-je-1EB"/>
                                 <include reference="pbO-MS-kAg"/>
-                                <include reference="Aa1-hu-aYI"/>
-                                <exclude reference="FaV-LE-kHc"/>
-                                <exclude reference="rTV-TS-kpy"/>
                                 <include reference="5qf-rP-po9"/>
                                 <exclude reference="Gb1-i4-hsA"/>
                                 <include reference="MeD-PY-v9c"/>
                                 <exclude reference="Oei-Gi-pB4"/>
+                                <include reference="Aa1-hu-aYI"/>
+                                <exclude reference="FaV-LE-kHc"/>
+                                <exclude reference="rTV-TS-kpy"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="bottomImage" destination="5mo-lY-Rdf" id="wvN-Ia-8HD"/>
-                        <outlet property="bottomsLeft" destination="SVk-MO-acA" id="dW1-ed-6Vm"/>
-                        <outlet property="bottomsRight" destination="LgV-iG-LCc" id="xmc-Zc-k16"/>
                         <outlet property="shoesImage" destination="s5v-Ot-ydc" id="6v3-se-7HZ"/>
-                        <outlet property="shoesLeft" destination="uKC-X9-o5m" id="6ME-4E-bq1"/>
-                        <outlet property="shoesRight" destination="ssl-Kr-8CC" id="P6I-5A-zFO"/>
                         <outlet property="topImage" destination="CmA-j1-LMH" id="wie-hd-OJN"/>
-                        <outlet property="topsLeft" destination="fj7-Xt-RTc" id="GuO-4j-Yza"/>
-                        <outlet property="topsRight" destination="wIt-e7-9vu" id="gY4-CF-k1U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

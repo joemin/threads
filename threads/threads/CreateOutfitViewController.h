@@ -7,20 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "Top.h"
+#import "Bottom.h"
 
 @interface CreateOutfitViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *topImage;
 @property (strong, nonatomic) IBOutlet UIImageView *bottomImage;
 @property (strong, nonatomic) IBOutlet UIImageView *shoesImage;
-@property (weak, nonatomic) IBOutlet UIButton *topsLeft;
-@property (weak, nonatomic) IBOutlet UIButton *topsRight;
-@property (weak, nonatomic) IBOutlet UIButton *bottomsLeft;
-@property (weak, nonatomic) IBOutlet UIButton *bottomsRight;
-@property (weak, nonatomic) IBOutlet UIButton *shoesLeft;
-@property (weak, nonatomic) IBOutlet UIButton *shoesRight;
+
+- (IBAction)topsRight:(id)sender;
+- (IBAction)topsLeft:(id)sender;
+
 @property (nonatomic) NSMutableArray *tops;
 @property (nonatomic) NSMutableArray *bottoms;
 @property (nonatomic) NSMutableArray *shoes;
+
+@property (nonatomic) Top *currentTop;
+@property (nonatomic) Bottom *currentBottom;
+@property (nonatomic) UIImage *currentShoes;
+
+@property NSUInteger topIndex;
+@property NSUInteger bottomIndex;
+@property NSUInteger shoeIndex;
+
+- loadTops:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
+- loadBottoms:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
+//- (void)topsShiftRight;
 
 @end

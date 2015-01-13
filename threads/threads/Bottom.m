@@ -1,14 +1,14 @@
 //
-//  Top.m
+//  Bottom.m
 //  threads
 //
 //  Created by Joseph Min on 1/12/15.
 //
 //
 
-#import "Top.h"
+#import "Bottom.h"
 
-@implementation Top
+@implementation Bottom
 
 -(id) init {
     if (!self) {
@@ -17,19 +17,19 @@
     return self;
 }
 
--(void) setTopImage:(UIImage *)image {
+-(void) setBottomImage:(UIImage *)image {
     self.image = image;
 }
 
--(UIImage *) getTopImage {
+-(UIImage *) getBottomImage {
     return self.image;
 }
 
--(void) setTopDescription:(NSString *)description {
+-(void) setBottomDescription:(NSString *)description {
     self.description = description;
 }
 
--(NSString *) getTopDescription {
+-(NSString *) getBottomDescription {
     return self.description;
 }
 
