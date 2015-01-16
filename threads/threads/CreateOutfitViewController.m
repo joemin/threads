@@ -40,6 +40,10 @@
             UIImage *toSet = [UIImage imageWithData:topURLData];
             [toAdd setImage:toSet];
             [toAdd setUrlString:urlString];
+            [toAdd setStoreName:@"Etsy"];
+            [toAdd setName:shirt[@"title"]];
+            [toAdd setPrice:shirt[@"price"]];
+            [toAdd setDescriptionString:shirt[@"description"]];
             [self.tops addObject:toAdd];
         }
         self.currentTop = [self.tops objectAtIndex:self.topIndex];
@@ -64,6 +68,10 @@
             UIImage *toSet = [UIImage imageWithData:bottomURLData];
             [toAdd setImage:toSet];
             [toAdd setUrlString:urlString];
+            [toAdd setStoreName:@"Etsy"];
+            [toAdd setName:pant[@"title"]];
+            [toAdd setPrice:pant[@"price"]];
+            [toAdd setDescriptionString:pant[@"description"]];
             [self.bottoms addObject:toAdd];
         }
         self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
@@ -73,12 +81,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString: @"topClicked"]) {
-        MoreInfoViewController *webview = [segue destinationViewController];
-        webview.urlToLoad = [[self.tops objectAtIndex:self.topIndex] urlString];
+        SingleItemViewController *nextView = [segue destinationViewController];
+        [nextView setGarment:[self.tops objectAtIndex:self.topIndex]];
     }
     if ([segue.identifier isEqualToString:@"bottomClicked"]) {
-        MoreInfoViewController *webview = [segue destinationViewController];
-        webview.urlToLoad = [[self.bottoms objectAtIndex:self.bottomIndex] urlString];
+        SingleItemViewController *nextView = [segue destinationViewController];
+        [nextView setGarment:[self.bottoms objectAtIndex:self.bottomIndex]];
     }
 }
 

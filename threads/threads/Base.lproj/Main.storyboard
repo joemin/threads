@@ -107,7 +107,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="maF-WR-atB" kind="show" identifier="topClicked" id="8ab-G1-Lva"/>
+                                    <segue destination="ak6-4O-1yL" kind="show" identifier="topClicked" id="KnE-z2-m6S"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mo-lY-Rdf">
@@ -127,7 +127,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="maF-WR-atB" kind="show" identifier="bottomClicked" id="bAZ-Hb-0yd"/>
+                                    <segue destination="ak6-4O-1yL" kind="show" identifier="bottomClicked" id="KZd-JT-ktG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -354,12 +354,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIv-d2-eFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894.75" y="1040.625"/>
+            <point key="canvasLocation" x="1646.25" y="484.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Item-->
         <scene sceneID="ha0-13-VZm">
             <objects>
-                <viewController id="ak6-4O-1yL" sceneMemberID="viewController">
+                <viewController id="ak6-4O-1yL" customClass="SingleItemViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WS8-S5-B8F"/>
                         <viewControllerLayoutGuide type="bottom" id="M9e-Tz-ElJ"/>
@@ -370,7 +370,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KEq-mc-t4j">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="133" width="135" height="170"/>
+                                    <rect key="frame" x="120" y="145" width="135" height="170"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvC-ir-Mnh">
@@ -379,7 +379,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="86" width="135" height="21"/>
+                                    <rect key="frame" x="120" y="98" width="135" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-ak-liq">
@@ -388,7 +388,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="349" width="190" height="21"/>
+                                    <rect key="frame" x="92" y="361" width="190" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w49-DP-8UC">
@@ -397,7 +397,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="400" width="190" height="21"/>
+                                    <rect key="frame" x="92" y="412" width="190" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxt-Dr-nok">
@@ -406,7 +406,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="450" width="190" height="70"/>
+                                    <rect key="frame" x="92" y="462" width="190" height="70"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejb-DM-CDp">
@@ -415,8 +415,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="172" y="528" width="30" height="30"/>
+                                    <rect key="frame" x="172" y="540" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="maF-WR-atB" kind="show" id="Lw2-pG-p8f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -441,7 +444,16 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Single Item" id="t6m-je-mBj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="buyButton" destination="Ejb-DM-CDp" id="y4B-6x-n7h"/>
+                        <outlet property="image" destination="KEq-mc-t4j" id="iv8-WR-r6P"/>
+                        <outlet property="itemDescription" destination="Dxt-Dr-nok" id="cmn-65-Ph5"/>
+                        <outlet property="name" destination="CvC-ir-Mnh" id="Ige-YC-Ao3"/>
+                        <outlet property="price" destination="w49-DP-8UC" id="2KU-0n-Xca"/>
+                        <outlet property="storeName" destination="kbi-ak-liq" id="YnA-GL-y2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qby-QD-6pR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,6 +461,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bAZ-Hb-0yd"/>
+        <segue reference="KZd-JT-ktG"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "Top.h"
 #import "Bottom.h"
-#import "MoreInfoViewController.h"
+#import "SingleItemViewController.h"
 
 @interface CreateOutfitViewController : UIViewController
 
@@ -36,5 +36,6 @@
 
 - (void)loadTops;
 - (void)loadBottoms;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 @end

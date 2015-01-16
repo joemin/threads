@@ -16,5 +16,6 @@
 @property (nonatomic) NSString *storeName;
 @property (nonatomic) NSString *descriptionString;
 @property (nonatomic) NSString *price;
+@property (nonatomic) NSString *name;
 
 @end
