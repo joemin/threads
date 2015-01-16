@@ -10,9 +10,4 @@
 
 @interface Bottom : Garment
 
--(void) setBottomImage:(UIImage *)image;
--(UIImage*) getBottomImage;
--(void) setBottomDescription:(NSString *)description;
--(NSString*) getBottomDescription;
-
 @end

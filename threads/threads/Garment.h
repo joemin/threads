@@ -11,7 +11,10 @@
 
 @interface Garment : NSObject
 
-@property (strong) UIImage *image;
-@property NSString *description;
+@property (nonatomic) UIImage *image;
+@property (nonatomic) NSString *urlString;
+@property (nonatomic) NSString *storeName;
+@property (nonatomic) NSString *descriptionString;
+@property (nonatomic) NSString *price;
 
 @end

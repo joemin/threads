@@ -17,20 +17,4 @@
     return self;
 }
 
--(void) setTopImage:(UIImage *)image {
-    self.image = image;
-}
-
--(UIImage *) getTopImage {
-    return self.image;
-}
-
--(void) setTopDescription:(NSString *)description {
-    self.description = description;
-}
-
--(NSString *) getTopDescription {
-    return self.description;
-}
-
 @end

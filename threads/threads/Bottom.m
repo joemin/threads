@@ -17,20 +17,4 @@
     return self;
 }
 
--(void) setBottomImage:(UIImage *)image {
-    self.image = image;
-}
-
--(UIImage *) getBottomImage {
-    return self.image;
-}
-
--(void) setBottomDescription:(NSString *)description {
-    self.description = description;
-}
-
--(NSString *) getBottomDescription {
-    return self.description;
-}
-
 @end

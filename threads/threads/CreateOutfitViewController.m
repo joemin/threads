@@ -17,7 +17,7 @@
     _shoes = [[NSMutableArray alloc] init];
     _topIndex = 0;
     _bottomIndex = 0;
-    [self.topImage setImage:[UIImage imageNamed:@"shirt.png"]];
+    //[self.topImage setImage:[UIImage imageNamed:@"shirt.png"]];
     
     [self loadTops];
     [self loadBottoms];
@@ -25,50 +25,61 @@
 
 - (void)loadTops {
     
-    PFQuery *listingQuery = [PFQuery queryWithClassName:@"listing"];
-    PFQuery *imageQuery = [PFQuery queryWithClassName:@"listing_image"];
+    PFQuery *query = [PFQuery queryWithClassName:@"listing_with_image"];
     
-    [listingQuery whereKey:@"category_path" equalTo:@"Tshirt"];
-    [imageQuery whereKey:@"listing_id" matchesKey:@"listing_id" inQuery:listingQuery];
-    imageQuery.limit = 10;
+    [query whereKey:@"category_path" equalTo:@"Tshirt"];
     
-    [imageQuery findObjectsInBackgroundWithBlock:^(NSArray *shirts, NSError *error) {
+    [query findObjectsInBackgroundWithBlock:^(NSArray *shirts, NSError *error) {
         for (PFObject *shirt in shirts) {
             Top *toAdd = [[Top alloc] init];
-            NSString *url = shirt[@"url_170x135"];
+            PFObject *imageObject = shirt[@"MainImage"];
+            NSString *urlString = shirt[@"url"];
+            NSString *url = imageObject[@"url_170x135"];
             NSURL *topURL = [NSURL URLWithString:url];
             NSData *topURLData = [NSData dataWithContentsOfURL:topURL];
             UIImage *toSet = [UIImage imageWithData:topURLData];
-            [toAdd setTopImage:toSet];
+            [toAdd setImage:toSet];
+            [toAdd setUrlString:urlString];
             [self.tops addObject:toAdd];
         }
         self.currentTop = [self.tops objectAtIndex:self.topIndex];
-        [self.topImage setImage:[self.currentTop getTopImage]];
+        [self.topImage setImage:[self.currentTop image]];
     }];
 }
 
 - (void)loadBottoms {
     
-    PFQuery *listingQuery = [PFQuery queryWithClassName:@"listing"];
-    PFQuery *imageQuery = [PFQuery queryWithClassName:@"listing_image"];
+    PFQuery *query = [PFQuery queryWithClassName:@"listing_with_image"];
     
-    [listingQuery whereKey:@"category_path" equalTo:@"Pants"];
-    [imageQuery whereKey:@"listing_id" matchesKey:@"listing_id" inQuery:listingQuery];
-    imageQuery.limit = 10;
+    [query whereKey:@"category_path" equalTo:@"Pants"];
     
-    [imageQuery findObjectsInBackgroundWithBlock:^(NSArray *pants, NSError *error) {
+    [query findObjectsInBackgroundWithBlock:^(NSArray *pants, NSError *error) {
         for (PFObject *pant in pants) {
             Bottom *toAdd = [[Bottom alloc] init];
-            NSString *url = pant[@"url_170x135"];
+            PFObject *imageObject = pant[@"MainImage"];
+            NSString *urlString = pant[@"url"];
+            NSString *url = imageObject[@"url_170x135"];
             NSURL *bottomURL = [NSURL URLWithString:url];
             NSData *bottomURLData = [NSData dataWithContentsOfURL:bottomURL];
             UIImage *toSet = [UIImage imageWithData:bottomURLData];
-            [toAdd setBottomImage:toSet];
+            [toAdd setImage:toSet];
+            [toAdd setUrlString:urlString];
             [self.bottoms addObject:toAdd];
         }
         self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
-        [self.bottomImage setImage:[self.currentBottom getBottomImage]];
+        [self.bottomImage setImage:[self.currentBottom image]];
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString: @"topClicked"]) {
+        MoreInfoViewController *webview = [segue destinationViewController];
+        webview.urlToLoad = [[self.tops objectAtIndex:self.topIndex] urlString];
+    }
+    if ([segue.identifier isEqualToString:@"bottomClicked"]) {
+        MoreInfoViewController *webview = [segue destinationViewController];
+        webview.urlToLoad = [[self.bottoms objectAtIndex:self.bottomIndex] urlString];
+    }
 }
 
 - (IBAction)topsRight:(id)sender {
@@ -76,7 +87,7 @@
         self.topIndex = self.topIndex + 1;
     }
     self.currentTop = [self.tops objectAtIndex:self.topIndex];
-    [self.topImage setImage:[self.currentTop getTopImage]];
+    [self.topImage setImage:[self.currentTop image]];
 }
 
 - (IBAction)topsLeft:(id)sender {
@@ -84,7 +95,7 @@
         self.topIndex = self.topIndex - 1;
     }
     self.currentTop = [self.tops objectAtIndex:self.topIndex];
-    [self.topImage setImage:[self.currentTop getTopImage]];
+    [self.topImage setImage:[self.currentTop image]];
 }
 
 - (IBAction)bottomsRight:(id)sender {
@@ -92,7 +103,7 @@
         self.bottomIndex = self.bottomIndex + 1;
     }
     self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
-    [self.bottomImage setImage:[self.currentBottom getBottomImage]];
+    [self.bottomImage setImage:[self.currentBottom image]];
 }
 
 - (IBAction)bottomsLeft:(id)sender {
@@ -100,7 +111,7 @@
         self.bottomIndex = self.bottomIndex - 1;
     }
     self.currentBottom = [self.bottoms objectAtIndex:self.bottomIndex];
-    [self.bottomImage setImage:[self.currentBottom getBottomImage]];
+    [self.bottomImage setImage:[self.currentBottom image]];
 }
 
 @end

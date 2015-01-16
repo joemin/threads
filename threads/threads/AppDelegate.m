@@ -20,12 +20,10 @@
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
-    
     [Parse setApplicationId:@"3NoBSZClJrI8pML3QuOBD3QUKYiZaFonXRJJszO1"
                   clientKey:@"q6KjEmWmTFwzmzxhPWmX1pTt9nrzsNqYwO4zZqiK"];
-    
-    // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 

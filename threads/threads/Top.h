@@ -10,10 +10,4 @@
 
 @interface Top : Garment
 
--(void) setTopImage:(UIImage *)image;
--(UIImage*) getTopImage;
--(void) setTopDescription:(NSString *)description;
--(NSString*) getTopDescription;
-
-
 @end

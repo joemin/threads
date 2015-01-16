@@ -32,6 +32,7 @@
 		3273669B1A64865F001311A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3273669A1A64865F001311A7 /* Images.xcassets */; };
 		3273669E1A64865F001311A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3273669C1A64865F001311A7 /* LaunchScreen.xib */; };
 		327366AA1A64865F001311A7 /* threadsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327366A91A64865F001311A7 /* threadsTests.m */; };
+		32BE922B1A689315009E7048 /* MoreInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BE922A1A689315009E7048 /* MoreInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		327366A31A64865F001311A7 /* threadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327366A81A64865F001311A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327366A91A64865F001311A7 /* threadsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = threadsTests.m; sourceTree = "<group>"; };
+		32BE92291A689315009E7048 /* MoreInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreInfoViewController.h; sourceTree = "<group>"; };
+		32BE922A1A689315009E7048 /* MoreInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				3273668D1A64865F001311A7 /* Supporting Files */,
 				323B81361A648AF4009358E8 /* CreateOutfitViewController.h */,
 				323B81371A648AF4009358E8 /* CreateOutfitViewController.m */,
+				32BE92291A689315009E7048 /* MoreInfoViewController.h */,
+				32BE922A1A689315009E7048 /* MoreInfoViewController.m */,
 				323B81481A64959F009358E8 /* Item Classes */,
 			);
 			path = threads;
@@ -258,6 +263,7 @@
 				TargetAttributes = {
 					327366891A64865F001311A7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 86E8Y5JRKT;
 					};
 					327366A21A64865F001311A7 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				327366961A64865F001311A7 /* ViewController.m in Sources */,
+				32BE922B1A689315009E7048 /* MoreInfoViewController.m in Sources */,
 				323B81381A648AF4009358E8 /* CreateOutfitViewController.m in Sources */,
 				323B81441A6493F7009358E8 /* Garment.m in Sources */,
 				323B81471A649418009358E8 /* Top.m in Sources */,

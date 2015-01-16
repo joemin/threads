@@ -10,12 +10,12 @@
 #import <Parse/Parse.h>
 #import "Top.h"
 #import "Bottom.h"
+#import "MoreInfoViewController.h"
 
 @interface CreateOutfitViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *topImage;
 @property (strong, nonatomic) IBOutlet UIImageView *bottomImage;
-@property (strong, nonatomic) IBOutlet UIImageView *shoesImage;
 
 - (IBAction)topsRight:(id)sender;
 - (IBAction)topsLeft:(id)sender;
@@ -34,8 +34,7 @@
 @property NSUInteger bottomIndex;
 @property NSUInteger shoeIndex;
 
-- (void)loadTops:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
-- (void)loadBottoms:(PFQuery*)listingQuery withImageQuery:(PFQuery *)imageQuery;
-//- (void)topsShiftRight;
+- (void)loadTops;
+- (void)loadBottoms;
 
 @end

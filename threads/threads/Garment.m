@@ -10,4 +10,11 @@
 
 @implementation Garment
 
+-(id) init {
+    if (!self) {
+        self = [super init];
+    }
+    return self;
+}
+
 @end
